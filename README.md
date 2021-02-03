@@ -1,6 +1,6 @@
 # fuzzy-diagnosis-thermal-failure
 
-*A hybrid approach (genetic + local search) to the multidimensional demand-constrained knapsack problem*
+*Fuzzy diagnosis of oil-related thermal failure in power transformers*
 
 ## Getting Started
 
