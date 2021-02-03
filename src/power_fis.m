@@ -25,7 +25,7 @@ fis = addMF(fis,'ethane','gauss2mf',[11.98 135 0.1 10000],'Name','significant');
 % Output
 fis = addOutput(fis,[0 100],'Name','criticality-level');
 
-% Output's membership functions
+% Criticality level's membership functions
 fis = addMF(fis,'criticality-level','trapmf',[0 5 10 20],'Name','normal');
 fis = addMF(fis,'criticality-level','trapmf',[11 18 34 40],'Name','low');
 fis = addMF(fis,'criticality-level','trapmf',[29 44 58 72],'Name','medium');
