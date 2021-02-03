@@ -63,7 +63,7 @@ rules = [1 1 1 1 1;
         5 5 5 1 1];
 fis = addRule(fis,rules);
 
-%% Visualizatoin
+%% Visualization
 
 % Number of points
 num_points = 10000;
