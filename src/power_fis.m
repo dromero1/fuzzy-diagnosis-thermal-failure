@@ -79,7 +79,7 @@ yEthylene = yEthylene(xEthylene(:,1)<=disp_limit,:);
 figure;
 hold on;
 plot(xEthylene,yEthylene,'LineWidth',3);
-xlabel('Ethylene');
+xlabel('ethylene');
 ylabel('Degree of membership');
 legend(categories);
 
@@ -91,7 +91,7 @@ yEthane = yEthane(xEthane(:,1)<=disp_limit,:);
 figure;
 hold on;
 plot(xEthane,yEthane,'LineWidth',3);
-xlabel('Ethane');
+xlabel('ethane');
 ylabel('Degree of membership');
 legend(categories);
 
