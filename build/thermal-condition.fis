@@ -1,0 +1,69 @@
+[System]
+Name='thermal-condition'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=25
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='ethylene'
+Range=[0 300]
+NumMFs=5
+MF1='normal':'gauss2mf',[0.0001 0 11.8 10]
+MF2='low':'gauss2mf',[4.75 26 7.64 50]
+MF3='medium':'gauss2mf',[9.34 70 20.957 90]
+MF4='high':'gauss2mf',[8.981 105 15.61 135]
+MF5='significant':'gauss2mf',[21.86 145 0.1 400]
+
+[Input2]
+Name='ethane'
+Range=[0 300]
+NumMFs=5
+MF1='normal':'gauss2mf',[0.0001 0 7.91 10]
+MF2='low':'gauss2mf',[11.87 25 17.54 45]
+MF3='medium':'gauss2mf',[17.54 65 18.42 85]
+MF4='high':'gauss2mf',[7.89 100 9.8 125]
+MF5='significant':'gauss2mf',[11.98 135 0.1 400]
+
+[Output1]
+Name='criticality-level'
+Range=[0 100]
+NumMFs=5
+MF1='normal':'trapmf',[0 5 10 20]
+MF2='low':'trapmf',[11 18 34 40]
+MF3='medium':'trapmf',[29 44 58 72]
+MF4='high':'trapmf',[57 68 83 94]
+MF5='significant':'trapmf',[82 96 100 105]
+
+[Rules]
+1 1, 1 (1) : 1
+1 2, 2 (1) : 1
+1 3, 3 (1) : 1
+1 4, 4 (1) : 1
+1 5, 5 (1) : 1
+2 1, 2 (1) : 1
+2 2, 2 (1) : 1
+2 3, 3 (1) : 1
+2 4, 4 (1) : 1
+2 5, 5 (1) : 1
+3 1, 3 (1) : 1
+3 2, 3 (1) : 1
+3 3, 3 (1) : 1
+3 4, 4 (1) : 1
+3 5, 5 (1) : 1
+4 1, 4 (1) : 1
+4 2, 4 (1) : 1
+4 3, 4 (1) : 1
+4 4, 5 (1) : 1
+4 5, 5 (1) : 1
+5 1, 5 (1) : 1
+5 2, 5 (1) : 1
+5 3, 5 (1) : 1
+5 4, 5 (1) : 1
+5 5, 5 (1) : 1
