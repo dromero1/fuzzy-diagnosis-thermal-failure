@@ -22,7 +22,7 @@ figure;
 hold on;
 plot(xEthylene,yEthylene,'LineWidth',3);
 xlabel('ethylene');
-ylabel('Degree of membership');
+ylabel('degree of membership');
 legend(categories);
 
 % Plot Ethane's membership functions
@@ -34,7 +34,7 @@ figure;
 hold on;
 plot(xEthane,yEthane,'LineWidth',3);
 xlabel('ethane');
-ylabel('Degree of membership');
+ylabel('degree of membership');
 legend(categories);
 
 % Plot Criticality level's membership functions
@@ -44,7 +44,7 @@ figure;
 hold on;
 plot(xCriticalityLevel,yCriticalityLevel,'LineWidth',3);
 xlabel('criticality level');
-ylabel('Degree of membership');
+ylabel('degree of membership');
 legend(categories);
 
 % Output surface

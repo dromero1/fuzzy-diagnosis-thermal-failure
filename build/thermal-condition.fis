@@ -15,31 +15,31 @@ DefuzzMethod='centroid'
 Name='ethylene'
 Range=[0 300]
 NumMFs=5
-MF1='normal':'gauss2mf',[0.0001 0 11.8 10]
-MF2='low':'gauss2mf',[4.75 26 7.64 50]
-MF3='medium':'gauss2mf',[9.34 70 20.957 90]
-MF4='high':'gauss2mf',[8.981 105 15.61 135]
-MF5='significant':'gauss2mf',[21.86 145 0.1 400]
+MF1='normal':'gauss2mf',[10.5 0 12.01 10]
+MF2='low':'gauss2mf',[5.05 30 7.64 50]
+MF3='medium':'gauss2mf',[9.34 70 8.95 90]
+MF4='high':'gauss2mf',[7.98 110 15.61 130]
+MF5='significant':'gauss2mf',[9.88 160 15.53 400]
 
 [Input2]
 Name='ethane'
 Range=[0 300]
 NumMFs=5
-MF1='normal':'gauss2mf',[0.0001 0 7.91 10]
-MF2='low':'gauss2mf',[11.87 25 17.54 45]
-MF3='medium':'gauss2mf',[17.54 65 18.42 85]
-MF4='high':'gauss2mf',[7.89 100 9.8 125]
-MF5='significant':'gauss2mf',[11.98 135 0.1 400]
+MF1='normal':'gauss2mf',[10.5 0 6.15 10]
+MF2='low':'gauss2mf',[6.54 25 9.03 45]
+MF3='medium':'gauss2mf',[7.94 65 6.72 85]
+MF4='high':'gauss2mf',[6.15 100 9.8 125]
+MF5='significant':'gauss2mf',[11.2 150 18.15 400]
 
 [Output1]
 Name='criticality-level'
 Range=[0 100]
 NumMFs=5
-MF1='normal':'trapmf',[0 5 10 20]
-MF2='low':'trapmf',[11 18 34 40]
-MF3='medium':'trapmf',[29 44 58 72]
-MF4='high':'trapmf',[57 68 83 94]
-MF5='significant':'trapmf',[82 96 100 105]
+MF1='normal':'gauss2mf',[10.5 0 3.32 10]
+MF2='low':'gauss2mf',[3.56 18 4.27 34]
+MF3='medium':'gauss2mf',[4.28 44 4.18 58]
+MF4='high':'gauss2mf',[4.39 68 4.61 83]
+MF5='significant':'gauss2mf',[6.42 96 12.3 100]
 
 [Rules]
 1 1, 1 (1) : 1
