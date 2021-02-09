@@ -2,7 +2,7 @@ clear;
 clc;
 
 % Fuzzy Inference System
-fis = mamfis('Name','thermal-condition');
+fis = mamfis('Name','thermal-condition','DefuzzificationMethod','som');
 
 % Linguistic categories
 categories = {'normal','low','medium','high','significant'};
