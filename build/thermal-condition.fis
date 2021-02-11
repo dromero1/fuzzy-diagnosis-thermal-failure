@@ -9,7 +9,7 @@ AndMethod='prod'
 OrMethod='probor'
 ImpMethod='min'
 AggMethod='max'
-DefuzzMethod='centroid'
+DefuzzMethod='lom'
 
 [Input1]
 Name='ethylene'

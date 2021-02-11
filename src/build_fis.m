@@ -2,7 +2,7 @@ clear;
 clc;
 
 % Parameters
-defuzz_method = 'centroid';
+defuzz_method = 'lom';
 t_norm = 'prod';
 s_norm = 'probor';
 
