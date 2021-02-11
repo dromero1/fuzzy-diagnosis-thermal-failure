@@ -1,8 +1,13 @@
 clear;
 clc;
 
+% Parameters
+defuzz_method = 'centroid';
+t_norm = 'prod';
+s_norm = 'probor';
+
 % Fuzzy Inference System
-fis = mamfis('Name','thermal-condition','DefuzzificationMethod','som');
+fis = mamfis('Name','thermal-condition','DefuzzificationMethod',defuzz_method,'AndMethod',t_norm,'OrMethod',s_norm);
 
 % Linguistic categories
 categories = {'normal','low','medium','high','significant'};
