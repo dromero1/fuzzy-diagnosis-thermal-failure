@@ -5,11 +5,11 @@ Version=2.0
 NumInputs=2
 NumOutputs=1
 NumRules=25
-AndMethod='prod'
-OrMethod='probor'
+AndMethod='min'
+OrMethod='max'
 ImpMethod='min'
 AggMethod='max'
-DefuzzMethod='lom'
+DefuzzMethod='centroid'
 
 [Input1]
 Name='ethylene'

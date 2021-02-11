@@ -2,9 +2,9 @@ clear;
 clc;
 
 % Parameters
-defuzz_method = 'lom';
-t_norm = 'prod';
-s_norm = 'probor';
+defuzz_method = 'centroid';
+t_norm = 'min';
+s_norm = 'max';
 
 % Fuzzy Inference System
 fis = mamfis('Name','thermal-condition','DefuzzificationMethod',defuzz_method,'AndMethod',t_norm,'OrMethod',s_norm);
