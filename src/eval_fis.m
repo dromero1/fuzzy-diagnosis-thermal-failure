@@ -5,4 +5,4 @@ clc;
 fis = readfis('../build/thermal-condition');
 
 % Sample evaluation
-evalfis(fis,[100 75])
+evalfis(fis,[1 1])

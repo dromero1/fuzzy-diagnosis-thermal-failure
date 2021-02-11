@@ -10,13 +10,8 @@ categories = {'normal','low','medium','high','significant'};
 % Number of points
 num_points = 10000;
 
-% Display limit
-disp_limit = 200;
-
 % Plot Ethylene's membership functions
 [xEthylene,yEthylene] = plotmf(fis,'input',1,num_points);
-xEthylene = xEthylene(xEthylene(:,1)<=disp_limit,:);
-yEthylene = yEthylene(xEthylene(:,1)<=disp_limit,:);
 
 figure;
 hold on;
@@ -27,8 +22,6 @@ legend(categories);
 
 % Plot Ethane's membership functions
 [xEthane,yEthane] = plotmf(fis,'input',2,num_points);
-xEthane = xEthane(xEthane(:,1)<=disp_limit,:);
-yEthane = yEthane(xEthane(:,1)<=disp_limit,:);
 
 figure;
 hold on;
