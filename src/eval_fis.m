@@ -15,10 +15,10 @@ y_ref = test(:,end);
 X = X./180;
 y_ref = y_ref./100;
 
-% Evaluation
+% Evaluate test data
 y_hat = evalfis(fis,X);
 
-% Mean Absolute Error
+% Calculate Mean Absolute Error
 mae = mean(abs(y_hat-y_ref));
 
 % Display

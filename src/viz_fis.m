@@ -40,6 +40,6 @@ xlabel('criticality level');
 ylabel('degree of membership');
 legend(categories);
 
-% Output surface
+% Plot output surface
 figure;
 gensurf(fis);

@@ -68,5 +68,5 @@ rules = [1 1 1 1 1;
         5 5 5 1 1];
 fis = addRule(fis,rules);
 
-% Save system to a file
+% Save FIS to a file
 writeFIS(fis,'../build/thermal-condition');
