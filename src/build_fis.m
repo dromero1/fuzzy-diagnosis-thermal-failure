@@ -2,7 +2,7 @@ clear;
 clc;
 
 % Parameters
-defuzz_method = 'bisector';
+defuzz_method = 'centroid';
 t_norm = 'min';
 s_norm = 'max';
 
@@ -17,28 +17,28 @@ fis = addInput(fis,[0 1],'Name','ethylene');
 fis = addInput(fis,[0 1],'Name','ethane');
 
 % Ethylene's membership functions
-fis = addMF(fis,'ethylene','gaussmf',[0.095 0],'Name',categories{1});
-fis = addMF(fis,'ethylene','gaussmf',[0.101 0.23],'Name',categories{2});
-fis = addMF(fis,'ethylene','gaussmf',[0.085 0.45],'Name',categories{3});
-fis = addMF(fis,'ethylene','gaussmf',[0.098 0.66],'Name',categories{4});
-fis = addMF(fis,'ethylene','gaussmf',[0.2 1],'Name',categories{5});
+fis = addMF(fis,'ethylene','gaussmf',[0.0955 0.0000],'Name',categories{1});
+fis = addMF(fis,'ethylene','gaussmf',[0.0850 0.2111],'Name',categories{2});
+fis = addMF(fis,'ethylene','gaussmf',[0.1135 0.4444],'Name',categories{3});
+fis = addMF(fis,'ethylene','gaussmf',[0.0755 0.6667],'Name',categories{4});
+fis = addMF(fis,'ethylene','gaussmf',[0.2100 1.0000],'Name',categories{5});
 
 % Ethane's membership functions
-fis = addMF(fis,'ethane','gaussmf',[0.082 0],'Name',categories{1});
-fis = addMF(fis,'ethane','gaussmf',[0.085 0.20],'Name',categories{2});
-fis = addMF(fis,'ethane','gaussmf',[0.083 0.40],'Name',categories{3});
-fis = addMF(fis,'ethane','gaussmf',[0.084 0.60],'Name',categories{4});
-fis = addMF(fis,'ethane','gaussmf',[0.25 1],'Name',categories{5});
+fis = addMF(fis,'ethane','gaussmf',[0.0850 0.0000],'Name',categories{1});
+fis = addMF(fis,'ethane','gaussmf',[0.0802 0.1944],'Name',categories{2});
+fis = addMF(fis,'ethane','gaussmf',[0.1090 0.4167],'Name',categories{3});
+fis = addMF(fis,'ethane','gaussmf',[0.0690 0.6250],'Name',categories{4});
+fis = addMF(fis,'ethane','gaussmf',[0.2500 1.0000],'Name',categories{5});
 
 % Output
 fis = addOutput(fis,[0 1],'Name','criticality-level');
 
 % Criticality level's membership functions
-fis = addMF(fis,'criticality-level','gaussmf',[0.105 0],'Name',categories{1});
-fis = addMF(fis,'criticality-level','gaussmf',[0.105 0.25],'Name',categories{2});
-fis = addMF(fis,'criticality-level','gaussmf',[0.105 0.50],'Name',categories{3});
-fis = addMF(fis,'criticality-level','gaussmf',[0.105 0.75],'Name',categories{4});
-fis = addMF(fis,'criticality-level','gaussmf',[0.105 1],'Name',categories{5});
+fis = addMF(fis,'criticality-level','gaussmf',[0.1140 0.0000],'Name',categories{1});
+fis = addMF(fis,'criticality-level','gaussmf',[0.1070 0.2600],'Name',categories{2});
+fis = addMF(fis,'criticality-level','gaussmf',[0.1070 0.5100],'Name',categories{3});
+fis = addMF(fis,'criticality-level','gaussmf',[0.1030 0.7550],'Name',categories{4});
+fis = addMF(fis,'criticality-level','gaussmf',[0.1070 1.0000],'Name',categories{5});
 
 % Rules
 rules = [1 1 1 1 1;

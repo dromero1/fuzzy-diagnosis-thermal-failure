@@ -9,37 +9,37 @@ AndMethod='min'
 OrMethod='max'
 ImpMethod='min'
 AggMethod='max'
-DefuzzMethod='bisector'
+DefuzzMethod='centroid'
 
 [Input1]
 Name='ethylene'
 Range=[0 1]
 NumMFs=5
-MF1='normal':'gaussmf',[0.095 0]
-MF2='low':'gaussmf',[0.101 0.23]
-MF3='medium':'gaussmf',[0.085 0.45]
-MF4='high':'gaussmf',[0.098 0.66]
-MF5='significant':'gaussmf',[0.2 1]
+MF1='normal':'gaussmf',[0.0955 0]
+MF2='low':'gaussmf',[0.085 0.2111]
+MF3='medium':'gaussmf',[0.1135 0.4444]
+MF4='high':'gaussmf',[0.0755 0.6667]
+MF5='significant':'gaussmf',[0.21 1]
 
 [Input2]
 Name='ethane'
 Range=[0 1]
 NumMFs=5
-MF1='normal':'gaussmf',[0.082 0]
-MF2='low':'gaussmf',[0.085 0.2]
-MF3='medium':'gaussmf',[0.083 0.4]
-MF4='high':'gaussmf',[0.084 0.6]
+MF1='normal':'gaussmf',[0.085 0]
+MF2='low':'gaussmf',[0.0802 0.1944]
+MF3='medium':'gaussmf',[0.109 0.4167]
+MF4='high':'gaussmf',[0.069 0.625]
 MF5='significant':'gaussmf',[0.25 1]
 
 [Output1]
 Name='criticality-level'
 Range=[0 1]
 NumMFs=5
-MF1='normal':'gaussmf',[0.105 0]
-MF2='low':'gaussmf',[0.105 0.25]
-MF3='medium':'gaussmf',[0.105 0.5]
-MF4='high':'gaussmf',[0.105 0.75]
-MF5='significant':'gaussmf',[0.105 1]
+MF1='normal':'gaussmf',[0.114 0]
+MF2='low':'gaussmf',[0.107 0.26]
+MF3='medium':'gaussmf',[0.107 0.51]
+MF4='high':'gaussmf',[0.103 0.755]
+MF5='significant':'gaussmf',[0.107 1]
 
 [Rules]
 1 1, 1 (1) : 1
