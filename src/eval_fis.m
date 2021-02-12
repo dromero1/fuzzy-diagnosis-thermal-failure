@@ -11,7 +11,7 @@ load('../data/test.mat')
 X = test(:,[1 2]);
 y_ref = test(:,end);
 
-% Scale inputs and outputs 
+% Scale inputs and outputs
 X = X/180;
 y_ref = y_ref/100;
 
