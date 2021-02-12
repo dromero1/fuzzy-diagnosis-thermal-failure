@@ -12,8 +12,8 @@ X = test(:,[1 2]);
 y_ref = test(:,end);
 
 % Scale inputs and outputs 
-X = X./180;
-y_ref = y_ref./100;
+X = X/180;
+y_ref = y_ref/100;
 
 % Evaluate test data
 y_hat = evalfis(fis,X);
