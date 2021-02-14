@@ -37,7 +37,7 @@ hold on;
 plot(xCriticalityLevel,yCriticalityLevel,'LineWidth',3);
 xlabel('criticality level');
 ylabel('degree of membership');
-title('MFs for the failure''s criticality level');
+title('MFs for failure''s criticality level');
 legend(categories);
 
 % Plot output surface
