@@ -43,4 +43,4 @@ legend(categories);
 % Plot output surface
 figure;
 gensurf(fis);
-title('Hyperplane of criticality level with ? defuzzification');
+title('Hyperplane of criticality level with ?');
