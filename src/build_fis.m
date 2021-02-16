@@ -2,7 +2,7 @@ clear;
 clc;
 
 % Parameters
-defuzz_method = 'centroid';
+defuzz_method = 'som';
 t_norm = 'min';
 s_norm = 'max';
 
